@@ -1,2 +1,23 @@
-1 #!/bin/bash
-2 echo "Best School" > \\\*\\\\"'\"Best School\"\\'"\\\\\*\$\\\?\\\*\\\*\\\*\\\*\\\*\:\)
+#!/bin/bash
+
+# Define the desired text
+text="Best School"
+
+# Create the file with the specified name
+file_name='*\''"Best School"'\''*$?$******:)'
+
+# Use echo to write the text to the file with a newline
+echo "$text" > "$file_name"
+
+# List the current directory
+ls
+
+# Execute the script to create the file
+./7-file
+
+# List the current directory again
+ls -l
+
+# Display the content of the created file with '$' at the end of each line
+cat -e "$file_name"
+
