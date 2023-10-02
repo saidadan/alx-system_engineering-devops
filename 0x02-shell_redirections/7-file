@@ -1,2 +1,18 @@
 #!/bin/bash
-echo "Best School" > \*\\'"Best School"\'\\*$\?\*\*\*\*\*:)
+
+# Define the desired text
+text="Best School"
+
+# Create the file with the specified name
+file_name='*\''"Best School"'\''*$?$******:)'
+
+# Use echo to write the text to the file with a newline
+echo "$text" > "$file_name"
+
+# Verify the file creation
+if [ -e "$file_name" ]; then
+  echo "File '$file_name' created successfully."
+else
+  echo "File creation failed."
+fi
+
